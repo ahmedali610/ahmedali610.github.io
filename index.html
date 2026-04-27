@@ -1276,13 +1276,6 @@ footer {
       </div>
 
       <div class="tech-category">
-        <div class="tech-category-label">Generative Models</div>
-        <div class="tech-cloud">
-          <span class="chip">Sora 2</span><span class="chip">Veo 3</span><span class="chip">Veo 3.1</span><span class="chip">Kling</span><span class="chip">Stable Diffusion</span><span class="chip">DALL-E</span>
-        </div>
-      </div>
-
-      <div class="tech-category">
         <div class="tech-category-label">Machine Learning</div>
         <div class="tech-cloud">
           <span class="chip">LoRA</span><span class="chip">QLoRA</span><span class="chip">DPO</span><span class="chip">RAG</span><span class="chip">Prompt Engineering</span><span class="chip">CNNs</span><span class="chip">RNNs</span><span class="chip">Transformers</span><span class="chip">ViT</span><span class="chip">YOLO</span><span class="chip">Object Detection</span><span class="chip">Segmentation</span>
@@ -1340,13 +1333,13 @@ footer {
           <li>Built a RAG pipeline over a proprietary media library (effects, transitions, stickers), reducing asset-search time by approximately 60% versus manual browsing.</li>
           <li>Delivered real-time output streaming via server-sent events, cutting perceived latency and enabling live user feedback during processing.</li>
           <li>Engineered a zero-input flyer-design pipeline, reducing designer turnaround from hours to under two minutes.</li>
-          <li>Architected VGen, a multi-agent video-ad platform on Sora 2, Veo 3 / 3.1, and Kling, maintaining end-to-end success rate above 95% in production.</li>
+          <li>Architected VGen, a multi-agent video-ad platform unifying multiple third-party video-generation backends behind a single orchestration layer, maintaining end-to-end success rate above 95% in production.</li>
         </ul>
         <div class="tl-badges">
           <span class="tl-badge">LangGraph</span>
           <span class="tl-badge">Multi-Agent</span>
           <span class="tl-badge">RAG</span>
-          <span class="tl-badge">Sora · Veo · Kling</span>
+          <span class="tl-badge">Async Orchestration</span>
           <span class="tl-badge">SSE Streaming</span>
         </div>
       </div>
@@ -1433,7 +1426,7 @@ footer {
       <h3 class="project-name">Multi-Agent Flyer Designer</h3>
       <p class="project-desc">Zero-input pipeline converting natural-language scene descriptions into structured flyer layouts — images, text, stickers — with drag, move, and replace editability.</p>
       <div class="project-stack">
-        <span>CrewAI</span><span>Stable Diffusion</span><span>Layout Engine</span><span>Python</span>
+        <span>CrewAI</span><span>Layout Engine</span><span>Python</span><span>Image Pipeline</span>
       </div>
     </div>
 
@@ -1443,9 +1436,9 @@ footer {
         <span class="project-tag">Production Platform</span>
       </div>
       <h3 class="project-name">VGen — Video Ad Platform</h3>
-      <p class="project-desc">Production multi-agent system for personalised video advertisements. Unified orchestration across Sora 2, Veo 3 / 3.1, and Kling — hot-swap backends, async job orchestration, retries, 95%+ success rate.</p>
+      <p class="project-desc">Production multi-agent system for personalised video advertisements. Unified orchestration across multiple third-party video-generation backends — hot-swap providers, async job orchestration, retries, and a 95%+ end-to-end success rate.</p>
       <div class="project-stack">
-        <span>Sora 2</span><span>Veo 3.1</span><span>Kling</span><span>Async Orchestration</span>
+        <span>Multi-Agent</span><span>Async Orchestration</span><span>FastAPI</span><span>Production</span>
       </div>
     </div>
 
