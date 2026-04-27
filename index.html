@@ -6,9 +6,6 @@
 <title>Ahmed Ali Mohamed — AI Engineer</title>
 <meta name="description" content="Ahmed Ali Mohamed — AI Engineer specialising in LLM-powered agents, multi-agent orchestration, and retrieval-augmented generation." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;450;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
 <style>
 /* ================================================================
@@ -39,9 +36,7 @@
   --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.45);
   --shadow-lg: 0 30px 80px rgba(0, 0, 0, 0.55);
 
-  --font-display: "Fraunces", "Times New Roman", serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: "JetBrains Mono", "SF Mono", Consolas, monospace;
+  --font-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
@@ -54,7 +49,7 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -70,6 +65,8 @@ body {
   letter-spacing: -0.005em;
 }
 
+
+em { font-style: normal; font-weight: 500; color: var(--accent); }
 .num, .card-stat-num, .tl-date, .edu-meta, .yr {
   font-feature-settings: "tnum", "lnum";
   font-variant-numeric: tabular-nums;
@@ -94,9 +91,8 @@ body {
 #loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 
 .loader-monogram {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-weight: 400;
-  font-variation-settings: "opsz" 144;
   font-size: clamp(72px, 12vw, 128px);
   letter-spacing: -0.04em;
   line-height: 1;
@@ -121,7 +117,7 @@ body {
 @keyframes fadeIn { to { opacity: 1; } }
 
 .loader-text {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9.5px;
   letter-spacing: 0.45em;
   color: var(--text-dim);
@@ -191,9 +187,8 @@ nav.navbar {
 @keyframes navSlide { to { transform: translateY(0); } }
 
 .nav-logo {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-weight: 400;
-  font-variation-settings: "opsz" 24;
   font-size: 18px;
   letter-spacing: -0.015em;
   color: var(--text);
@@ -212,7 +207,7 @@ nav.navbar {
 .nav-links a {
   color: var(--text-dim);
   text-decoration: none;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px; font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -222,8 +217,7 @@ nav.navbar {
 }
 .nav-links a .roman {
   color: var(--accent);
-  font-style: italic;
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 11px;
   letter-spacing: 0;
@@ -262,8 +256,7 @@ section {
   max-width: 200px;
 }
 .section-divider .ornament {
-  font-family: var(--font-display);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-size: 14px;
   color: var(--accent);
   font-weight: 400;
@@ -280,10 +273,8 @@ section {
   border-bottom: 1px solid var(--border);
 }
 .section-roman {
-  font-family: var(--font-display);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-weight: 400;
-  font-variation-settings: "opsz" 36;
   font-size: 18px;
   color: var(--accent);
   letter-spacing: 0.04em;
@@ -294,7 +285,7 @@ section {
 }
 .section-head-content { flex: 1; }
 .eyebrow {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.4em;
   color: var(--text-dim);
@@ -304,8 +295,7 @@ section {
 }
 
 .section-title {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 144;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: clamp(34px, 4.6vw, 58px);
   line-height: 1.1;
@@ -314,8 +304,8 @@ section {
   color: var(--text);
 }
 .section-title em {
-  font-style: italic;
-  font-weight: 300;
+  color: var(--accent);
+  font-weight: 400;
 }
 
 /* Reveal */
@@ -343,7 +333,7 @@ section {
   padding: 8px 18px 8px 16px;
   border: 1px solid var(--border-strong);
   background: rgba(255, 255, 255, 0.012);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -358,8 +348,7 @@ section {
 }
 
 .hero-name {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 144;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: clamp(58px, 8.8vw, 124px);
   line-height: 0.96;
@@ -368,7 +357,7 @@ section {
   color: var(--text);
 }
 .hero-name .line { display: block; }
-.hero-name .it { font-style: italic; font-weight: 300; }
+.hero-name .it { font-weight: 300; }
 
 .hero-rule {
   width: 64px; height: 1px;
@@ -377,8 +366,7 @@ section {
 }
 
 .hero-role {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 24;
+  font-family: var(--font-sans);
   font-size: clamp(17px, 1.4vw, 20px);
   font-weight: 400;
   color: var(--text-soft);
@@ -386,12 +374,11 @@ section {
   margin-bottom: 24px;
   line-height: 1.55;
   letter-spacing: -0.005em;
-  font-style: italic;
 }
 .hero-role strong { color: var(--text); font-weight: 500; font-style: normal; }
 
 .hero-meta {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10.5px;
   color: var(--text-dim);
   letter-spacing: 0.22em;
@@ -406,7 +393,7 @@ section {
   gap: 16px;
   padding: 15px 30px;
   border-radius: 0;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-weight: 500;
   font-size: 11px;
   text-decoration: none;
@@ -424,7 +411,7 @@ section {
   border-color: var(--border-strong);
 }
 .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
-.btn .arrow { transition: transform 0.6s var(--ease); display: inline-block; font-family: var(--font-display); font-style: normal; }
+.btn .arrow { transition: transform 0.6s var(--ease); display: inline-block; font-family: var(--font-sans); font-style: normal; }
 .btn:hover .arrow { transform: translateX(6px); }
 
 .hero-right {
@@ -492,7 +479,7 @@ section {
   filter: saturate(0.92) contrast(1.02);
 }
 .card-id {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9px;
   color: var(--text-dim);
   letter-spacing: 0.22em;
@@ -504,9 +491,8 @@ section {
 .card-id .val { color: var(--accent); display: block; margin-top: 4px; }
 
 .card-name {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-weight: 400;
-  font-variation-settings: "opsz" 36;
   font-size: 21px;
   letter-spacing: -0.015em;
   margin-bottom: 6px;
@@ -514,7 +500,7 @@ section {
   color: var(--text);
 }
 .card-role {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   color: var(--text-dim);
   margin-bottom: 32px;
@@ -531,9 +517,8 @@ section {
   border-top: 1px solid var(--border);
 }
 .card-stat-num {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-weight: 400;
-  font-variation-settings: "opsz" 48;
   font-size: 28px;
   color: var(--text);
   margin-bottom: 8px;
@@ -541,7 +526,7 @@ section {
   line-height: 1;
 }
 .card-stat-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 8.5px;
   color: var(--text-dim);
   letter-spacing: 0.18em;
@@ -559,10 +544,8 @@ section {
 
 .tech-category { margin-bottom: 0; }
 .tech-category-label {
-  font-family: var(--font-display);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-weight: 400;
-  font-variation-settings: "opsz" 24;
   font-size: 15px;
   color: var(--text-soft);
   margin-bottom: 14px;
@@ -577,7 +560,7 @@ section {
   border-radius: 0;
   background: transparent;
   border: 1px solid var(--border);
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-size: 11.5px;
   color: var(--text-soft);
   font-weight: 450;
@@ -644,15 +627,14 @@ section {
   border-bottom: 1px solid var(--border);
 }
 .tl-title {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 36;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 23px;
   letter-spacing: -0.018em;
   color: var(--text);
 }
 .tl-date {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   color: var(--text-dim);
   letter-spacing: 0.22em;
@@ -671,7 +653,7 @@ section {
   font-weight: 500;
 }
 .tl-location {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9.5px;
   color: var(--text-dim);
   letter-spacing: 0.22em;
@@ -701,7 +683,7 @@ section {
   padding: 4px 11px;
   border-radius: 0;
   font-size: 9.5px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -739,7 +721,7 @@ section {
   margin-bottom: 32px;
 }
 .project-index {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10.5px;
   color: var(--text-dim);
   letter-spacing: 0.22em;
@@ -747,18 +729,15 @@ section {
 }
 .project-index .num { color: var(--text); font-weight: 500; }
 .project-tag {
-  font-family: var(--font-display);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-weight: 400;
-  font-variation-settings: "opsz" 14;
   font-size: 12px;
   color: var(--accent);
   letter-spacing: 0.01em;
 }
 
 .project-name {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 36;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 21px;
   letter-spacing: -0.022em;
@@ -781,7 +760,7 @@ section {
   border-top: 1px solid var(--border);
 }
 .project-stack span {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9.5px;
   padding: 3px 0;
   margin-right: 14px;
@@ -804,8 +783,7 @@ section {
 }
 .edu-card:hover { border-color: var(--border-strong); background: var(--bg-card); }
 .edu-degree {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 24;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 8px;
@@ -818,13 +796,11 @@ section {
   color: var(--text-soft);
   margin-bottom: 18px;
   font-weight: 400;
-  font-style: italic;
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 24;
+  font-family: var(--font-sans);
 }
 .edu-meta {
   display: flex; gap: 22px; flex-wrap: wrap;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9.5px;
   color: var(--text-dim);
   letter-spacing: 0.2em;
@@ -836,7 +812,7 @@ section {
 .edu-meta strong { color: var(--accent); font-weight: 500; }
 
 .lang-section h3, .cert-section h3 {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.4em;
@@ -858,15 +834,14 @@ section {
 }
 .lang-row:hover { border-color: var(--border-strong); }
 .lang-name {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 24;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: -0.012em;
   color: var(--text);
 }
 .lang-level {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9.5px;
   font-weight: 500;
   padding: 5px 12px;
@@ -895,7 +870,7 @@ section {
 .cert-mini:hover { border-color: var(--border-strong); }
 .cert-mini .ico { color: var(--accent); margin-right: 12px; font-size: 7px; }
 .cert-mini .yr {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9.5px;
   color: var(--text-dim);
   letter-spacing: 0.2em;
@@ -940,7 +915,7 @@ section {
 .contact-card:hover .contact-ico svg { stroke: var(--accent); }
 
 .contact-info-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -949,7 +924,7 @@ section {
   font-weight: 500;
 }
 .contact-info-value {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-size: 14px;
   font-weight: 450;
   color: var(--text);
@@ -1003,8 +978,7 @@ footer {
   margin-top: 80px;
 }
 .footer-mark {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 96;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 38px;
   letter-spacing: -0.035em;
@@ -1016,7 +990,7 @@ footer {
   opacity: 0.5;
 }
 .footer-meta {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9.5px;
   color: var(--text-dim);
   letter-spacing: 0.32em;
@@ -1475,12 +1449,8 @@ footer {
         <h3>Certifications</h3>
         <div class="lang-list">
           <div class="cert-mini">
-            <span><span class="ico">◆</span> Deep Learning Specialisation — Andrew Ng (Coursera, 79 hrs)</span>
-            <span class="yr">— · —</span>
-          </div>
-          <div class="cert-mini">
             <span><span class="ico">◆</span> AWS Academy — Machine Learning for NLP</span>
-            <span class="yr">AWS</span>
+            <span class="yr">Nov 2024</span>
           </div>
           <div class="cert-mini">
             <span><span class="ico">◆</span> Huawei Certified ICT Professional (HCIP)</span>
